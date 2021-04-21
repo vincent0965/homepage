@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+}
+.head{
+    color:white;
+    background-color:#223344;
+    font-weight: bold;
+    font-size: 24px;
+    text-align:center;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.main{
+    background-color: aliceblue;
+    /*轉成水平排列*/
+    display: flex;
+    /*區塊於畫面置中*/
+    justify-content: center;
+    /*允許內部區塊往下*/
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color:palegoldenrod;
+    width: 280px;margin: 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.title{
+    background-color:brown;
+    color:honeydew;
+    text-align: center;
+}
+
+/*CSS media Query*/
+@media (max-width:1250px){
+    /*如果螢幕寬度小於1250px，套用此區塊設定*/
+    .box{
+        width: 45%;
+    }
+}
+
+@media (max-width:500px){
+    /*如果螢幕寬度小於500px，套用此區塊設定*/
+    .head{
+        font-size: 24px;
+    }
+    .box{
+        width: 90%;
+    }
+}
+
